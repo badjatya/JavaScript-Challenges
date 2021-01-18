@@ -106,3 +106,77 @@ function rpcFrontEnd (message,humanChoice,botChoice) {
     document.getElementById('challenge3Remove').style.display = "none";
 }
 
+// CHALLENGE 4 
+var allButton = document.getElementsByTagName("button");
+var copyAllButton = [];
+
+for (let i = 0; i < allButton.length; i++) {
+    copyAllButton[i] = allButton[i].classList[1];
+}
+
+function challenge4ButtonColorChanger(thingy) {
+    if (thingy.value === "red") {
+        redButton();
+    } else if (thingy.value === "green" ) {
+        greenButton();
+    } else if (thingy.value === "reset" ) {
+        resetButton();
+    } else if (thingy.value === "random" ) {
+        randomButton();
+    }  else if (thingy.value === "yellow" ) {
+        yellowButton();
+    }  else if (thingy.value === "blue" ) {
+        blueButton();
+    }
+}
+
+function redButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+        allButton[i].classList.add("btn-danger");
+    }
+}
+
+function greenButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+        allButton[i].classList.add("btn-success");
+    }
+}
+
+function yellowButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+        allButton[i].classList.add("btn-warning");
+    }
+}
+
+function blueButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+        allButton[i].classList.add("btn-primary");
+    }
+}
+
+function resetButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+        allButton[i].classList.add(copyAllButton[i]);
+    }
+}
+
+function randomButton () {
+    for (let i = 0 ; i < allButton.length; i++) {
+        allButton[i].classList.remove(allButton[i].classList[1]);
+    }
+    let randomText = ["btn-primary" , "btn-success" , "btn-danger" , "btn-warning"];
+
+    for (let i = 0 ; i < allButton.length; i++) {
+        let randomNumber = Math.floor(Math.random() * 4);
+
+        allButton[i].classList.add(randomText[randomNumber]);
+
+    }
+}
+
+
