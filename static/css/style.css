@@ -1,0 +1,59 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 25px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.flex-container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container-1 div {
+  padding: 20px;
+}
+
+.flex-container-1:last-child div {
+  padding: 0;
+}
+
+/* Challenge 2  */
+
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-container-2 img {
+  margin: 15px;
+  width: 30%;
+  height: 35%;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+}
+
+.cat-gen-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+/* Challenge 3  */
+.flex-container-3 {
+  display: flex;
+  margin: 25px;
+}
+
+.flex-container-3 img {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Badjatya</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+
+    <!-- Challenge 1  -->
+    <div class="container container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+
+        <div class="flex-container-1">
+            <div>
+                <button onclick="ageDays()" class="btn btn-primary">Click Me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="resetAgeDays()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-container-1">
+            <div id="challenge1"></div>
+        </div>
+
+    </div>
+
+    <!-- Challenge 2  -->
+    <div class="container container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <div class="cat-gen-button">
+            <button class="btn btn-success" onclick="catGen ()">Genrate</button>
+        </div>
+
+        <div class="flex-container-2" id="cat"></div>
+    </div>
+
+
+    <!-- Challenge 3  -->
+    <div class="container container-3">
+        <h2>Challenge 3: Rock Paper Scissors</h2>
+
+        <div class="flex-container-3">
+            <img id="rock" onclick="rpc(this)" src="./static/img/challenge-3-rock.png" alt="Rock">
+            <img id="paper" onclick="rpc(this)" src="./static/img/challenge-3-paper.png" alt="Paper">
+            <img id="scissor" onclick="rpc(this)" src="./static/img/challenge-3-scissior.png" alt="Scissor">
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
