@@ -56,4 +56,51 @@
   width: 30%;
   height: auto;
   cursor: pointer;
+  margin: 20px;
+  transition: box-shadow 0.5s, border-radius 0.2s;
+}
+
+.flex-container-3 img:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 10px 50px rgba(255, 0, 0, 0.8); */
+  border-radius: 5px;
+}
+
+#Challenge3 h2 {
+  margin: auto 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#lostHumanImg {
+  box-shadow: 0 10px 50px rgba(255, 0, 0, 0.8);
+}
+
+#lostH2 {
+  color: red;
+}
+
+#winBotImg {
+  box-shadow: 0 10px 50px rgba(2, 253, 44, 0.8);
+}
+
+#lostBotImg {
+  box-shadow: 0 10px 50px rgba(255, 0, 0, 0.8);
+}
+
+#winHumanImg {
+  box-shadow: 0 10px 50px rgba(2, 253, 44, 0.8);
+}
+
+#winH2 {
+  color: green;
+}
+
+#tiedHumanImg,
+#tiedBotImg {
+  box-shadow: 0 10px 50px rgba(236, 253, 2, 0.8);
+}
+
+#tiedH2 {
+  color: black;
 }
