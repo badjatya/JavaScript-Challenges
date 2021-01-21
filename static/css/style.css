@@ -111,3 +111,55 @@
   justify-content: space-around;
   margin-top: 25px;
 }
+
+/* CHALLENGE 5  */
+
+.container-5 h3 {
+  text-align: center;
+}
+
+.blackjack-flex-1 {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+
+.blackjack-flex-2 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.blackjack-flex-1,
+.blackjack-flex-2 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(62, 152, 33, 1) 32%
+  );
+
+  color: #ffffff;
+}
+
+#your-box,
+#dealer-box {
+  border: 1px solid black;
+  height: 50vh;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#your-box h2,
+#dealer-box h2 {
+  width: 100%;
+}
+#your-box img,
+#dealer-box img {
+  height: 25%;
+  width: auto;
+  margin-right: 10px;
+}

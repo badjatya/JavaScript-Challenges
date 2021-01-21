@@ -33,7 +33,7 @@
     <div class="container container-2">
         <h2>Challenge 2: Cat Generator</h2>
         <div class="cat-gen-button">
-            <button class="btn btn-success" onclick="catGen ()">Genrate</button>
+            <button class="btn-lg btn-success" onclick="catGen ()">Genrate</button>
         </div>
 
         <div class="flex-container-2" id="cat"></div>
@@ -73,6 +73,44 @@
             <button class="btn btn-danger">Signal</button>
             <button class="btn btn-success">Youtube</button>
             <button class="btn btn-warning">Netflix</button>
+        </div>
+    </div>
+
+    <div class="container container-5">
+        <h2>Challenge 5: BlackJack Game</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="blackjack-flex-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                
+            </div>
+        </div>
+
+        <div class="blackjack-flex-2">
+            <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+
+        <div class="blackjack-flex-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
         </div>
     </div>
 
